@@ -1,111 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to our modern parallax homepage" />
-  <title>Home | Parallax Experience</title>
-  <link rel="stylesheet" href="./src/styles/styles.css" />
-  <link rel="stylesheet" href="./src/styles/home.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Playfair+Display:wght@700&display=swap"
-    rel="stylesheet">
-
-
+  <title>Creative Digital Agency</title>
+  <meta name="description" content="Creative agency offering graphic design, web development, and digital marketing services." />
+  <meta property="og:title" content="Creative Digital Agency" />
+  <meta property="og:description" content="We design digital experiences: branding, websites, and campaigns." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="/src/styles/styles.css" />
 </head>
-
 <body>
-  <div class="header-container">
-    <div class="logo"><img src="./src/images/logo.jpg" alt="Company Logo"> <a href="./index.html"></a>
-    </div>
-    
+  <!-- Header / Navigation -->
+  <header class="site-header" role="banner">
+    <nav class="nav" aria-label="Main navigation">
+     
+      <ul class="nav__list">
+        
+        <li><a href="" class="nav__link"><img class="logo" src="/src/images/logo.png" alt=""></a></li>
+        <li><a href="" class="nav__link "   ><img class="logo-text " src="/src/images/text-logo.png" alt=""></a></li>
+        <li><a href="#home" class="nav__link nav__link--active">Home</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+        <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header class="header" role="banner">
-      <div class="logo-text">
-        <h1>VoxEdition Works Inc.</h1>
+  <main class="site-main">
+    <!-- Hero / Parallax -->
+    <section id="home" class="hero hero--parallax">
+      <div class="hero__layer hero__layer--bg"></div>
+      <div class="hero__layer hero__layer--mg"></div>
+      <div class="hero__content container">
+        <h1 class="hero__title">We Design Digital Experiences</h1>
+        <p class="hero__subtitle"></p>
+        <a href="#contact" class="btn btn--primary">Start Your Project</a>
       </div>
-
-      <nav class="nav" aria-label="Main Navigation">
-        <ul class="nav__list">
-          <li><a href="index.html" class="nav__link active"><i class="fa fa-home"></i><span>Home</span></li>
-          <li><a href="about.html" class="nav__link"><i class="fa fa-user"></i><span>About</span></a></li>
-          <li><a href="services.html" class="nav__link"><i class="fa fa-cogs"></i><span>Services</span></a></li>
-          <li><a href="contact.html" class="nav__link"><i class="fa fa-book"></i><span>Contact</span></a></a></li>
-        </ul>
-      </nav>
-
-    </header>
-  
-
-  <main>
-    <section class="section section--home" aria-label="Home" loading="lazy">
-      <div class="parallax__layer parallax__background"></div>
-      <div class="parallax__layer parallax__midground"></div>
-      <div class="parallax__layer parallax__foreground">
-
-        <div class="hero__content">
-          <img src="./src/images/man.gif" alt="">
-        </div>
-      </div>
-      <div class="parallax__layer parallax__frog home-intro-grahic-frog">
-        <img src="./src/images/frog.gif" alt="">
-      </div>
-      
     </section>
 
+    <!-- Services -->
+    <section id="services" class="services section fade-in" aria-labelledby="services-title">
+      <div class="container">
+        <h2 id="services-title" class="section__title">Our Services</h2>
+        <div class="services__grid">
+          <article class="service">
+            <h3 class="service__title">Graphic Design</h3>
+            <p class="service__desc">Logos, branding, visual content, and design systems that elevate your identity.</p>
+          </article>
+          <article class="service">
+            <h3 class="service__title">Web Development</h3>
+            <p class="service__desc">Responsive websites built with modern HTML, CSS, and JavaScript standards.</p>
+          </article>
+          <article class="service">
+            <h3 class="service__title">Digital Marketing</h3>
+            <p class="service__desc">SEO, email campaigns, and social media strategies to grow your audience.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats section fade-in" aria-labelledby="stats-title">
+      <div class="container">
+        <h2 id="stats-title" class="section__title">Our Impact</h2>
+        <div class="services__grid">
+          <div>
+            <h3 class="stat" data-target="150">0</h3>
+            <p>Projects Completed</p>
+          </div>
+          <div>
+            <h3 class="stat" data-target="100">0</h3>
+            <p>Happy Clients</p>
+          </div>
+          <div>
+            <h3 class="stat" data-target="25000">0</h3>
+            <p>Hours Worked</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio section fade-in" aria-labelledby="portfolio-title">
+      <div class="container">
+        <h2 id="portfolio-title" class="section__title">Featured Work</h2>
+        <div class="portfolio__grid">
+          <div class="portfolio__item">
+            <img src="images/project1.jpg" alt="Brand Identity Design for Client A" class="portfolio__img" />
+            <h4 class="portfolio__title">Brand Identity – Client A</h4>
+          </div>
+          <div class="portfolio__item">
+            <img src="images/project2.jpg" alt="Responsive Website for Client B" class="portfolio__img" />
+            <h4 class="portfolio__title">Website Redesign – Client B</h4>
+          </div>
+          <div class="portfolio__item">
+            <img src="images/project3.jpg" alt="Marketing Campaign for Client C" class="portfolio__img" />
+            <h4 class="portfolio__title">Social Campaign – Client C</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials section fade-in" aria-labelledby="testimonials-title">
+      <div class="container">
+        <h2 id="testimonials-title" class="section__title">What Clients Say</h2>
+        <div class="testimonials__grid">
+          <blockquote class="testimonial">
+            <p>"They rebranded our entire business and the results were amazing. Highly recommend!"</p>
+            <footer class="testimonial__author">— Sarah M., CEO of Startup Co.</footer>
+          </blockquote>
+          <blockquote class="testimonial">
+            <p>"Professional, fast, and creative. Our website looks stunning on every device."</p>
+            <footer class="testimonial__author">— James L., Marketing Manager</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section id="contact" class="cta section fade-in">
+      <div class="container">
+        <h2 class="section__title">Ready to elevate your brand?</h2>
+        <a href="#contact" class="btn btn--primary">Let’s Talk</a>
+      </div>
+    </section>
   </main>
 
-  </div>
-  
-  <section class="home intro">
-    <div class="home teaser">
-      <div class="superhero-icon">
-        <img src="https://cdn.pixabay.com/animation/2022/08/26/20/18/20-18-39-514_512.gif" alt="Superhero 3D Cartoon" />
-      </div>
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p>&copy; 2025 Creative Digital Agency. All rights reserved.</p>
+      <ul class="social__list" aria-label="Social links">
+        <li><a href="#" class="social__link">Instagram</a></li>
+        <li><a href="#" class="social__link">Dribbble</a></li>
+        <li><a href="#" class="social__link">LinkedIn</a></li>
+      </ul>
     </div>
-  </section>
-
-  <div class="home testimony">
-    <article class="container home-testimony fade-in">
-      <h2>Customer Testimonies</h2>
-      <div class="card-grid">
-        <div class="card">
-          <img src="https://picsum.photos/seed/service1/400/300" alt="UI Design Concept" class="fade-img"
-            loading="lazy" />
-          <h3>UI/UX Design</h3>
-          <p>Intuitive interfaces and seamless user journeys built with empathy and precision.</p>
-        </div>
-        <div class="card">
-          <img src="https://picsum.photos/seed/service2/400/300" alt="Web Development" class="fade-img"
-            loading="lazy" />
-          <h3>Web Development</h3>
-          <p>Modern front-end solutions with performance, accessibility, and SEO at the core.</p>
-        </div>
-        <div class="card">
-          <img src="https://picsum.photos/seed/service3/400/300" alt="Motion Graphics" class="fade-img"
-            loading="lazy" />
-          <h3>Motion & Interaction</h3>
-          <p>Animations and interactions that bring life to your digital presence.</p>
-        </div>
-      </div>
-    </article>
-  </div>
-
-
-
-  <footer class="footer" role="contentinfo">
-    <p>&copy; 2025 VoxEdition Works Inc.</p>
-    <div class="footer social-icons">
-      <li><a href="index.html" class="nav__link active">Facebook</a></li>
-      <li><a href="about.html" class="nav__link">Twitter</a></li>
-      <li><a href="services.html" class="nav__link">Instagram</a></li>
-    </div>
-
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
-
 </html>
